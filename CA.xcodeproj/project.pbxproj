@@ -15,12 +15,18 @@
 		25245DA01552AF6300EE8F69 /* CAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245D9F1552AF6300EE8F69 /* CAAppDelegate.m */; };
 		25245DA31552AF6300EE8F69 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25245DA11552AF6300EE8F69 /* MainStoryboard_iPhone.storyboard */; };
 		25245DA61552AF6300EE8F69 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25245DA41552AF6300EE8F69 /* MainStoryboard_iPad.storyboard */; };
-		25245DA91552AF6300EE8F69 /* CAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DA81552AF6300EE8F69 /* CAFirstViewController.m */; };
 		25245DAB1552AF6300EE8F69 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 25245DAA1552AF6300EE8F69 /* first.png */; };
 		25245DAD1552AF6300EE8F69 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25245DAC1552AF6300EE8F69 /* first@2x.png */; };
-		25245DB01552AF6300EE8F69 /* CASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DAF1552AF6300EE8F69 /* CASecondViewController.m */; };
 		25245DB21552AF6300EE8F69 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 25245DB11552AF6300EE8F69 /* second.png */; };
 		25245DB41552AF6300EE8F69 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25245DB31552AF6300EE8F69 /* second@2x.png */; };
+		25245DBF1552AFE100EE8F69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25245DBE1552AFE100EE8F69 /* CoreLocation.framework */; };
+		25245DC11552AFE600EE8F69 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25245DC01552AFE600EE8F69 /* MapKit.framework */; };
+		25245DC41552B03800EE8F69 /* CAInsertRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DC31552B03800EE8F69 /* CAInsertRouteViewController.m */; };
+		25245DC71552B05600EE8F69 /* CAShowStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DC61552B05600EE8F69 /* CAShowStationsViewController.m */; };
+		25245DCA1552B25800EE8F69 /* CAShowRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DC91552B25800EE8F69 /* CAShowRouteViewController.m */; };
+		25245DCD1552B56900EE8F69 /* CATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DCC1552B56900EE8F69 /* CATabBarController.m */; };
+		25245DD01552BA0900EE8F69 /* CAStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DCF1552BA0900EE8F69 /* CAStation.m */; };
+		25245DD31552BA2200EE8F69 /* CAStationsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 25245DD21552BA2200EE8F69 /* CAStationsList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,22 +34,32 @@
 		25245D8F1552AF6300EE8F69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		25245D911552AF6300EE8F69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		25245D931552AF6300EE8F69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		25245D971552AF6300EE8F69 /* CA-Info.plist */ = {isa = PBXFileReference; path = "CA-Info.plist"; sourceTree = "<group>"; };
+		25245D971552AF6300EE8F69 /* CA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CA-Info.plist"; sourceTree = "<group>"; };
 		25245D991552AF6300EE8F69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25245D9B1552AF6300EE8F69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		25245D9D1552AF6300EE8F69 /* CA-Prefix.pch */ = {isa = PBXFileReference; path = "CA-Prefix.pch"; sourceTree = "<group>"; };
-		25245D9E1552AF6300EE8F69 /* CAAppDelegate.h */ = {isa = PBXFileReference; path = CAAppDelegate.h; sourceTree = "<group>"; };
+		25245D9D1552AF6300EE8F69 /* CA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CA-Prefix.pch"; sourceTree = "<group>"; };
+		25245D9E1552AF6300EE8F69 /* CAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAppDelegate.h; sourceTree = "<group>"; };
 		25245D9F1552AF6300EE8F69 /* CAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAppDelegate.m; sourceTree = "<group>"; };
 		25245DA21552AF6300EE8F69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		25245DA51552AF6300EE8F69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		25245DA71552AF6300EE8F69 /* CAFirstViewController.h */ = {isa = PBXFileReference; path = CAFirstViewController.h; sourceTree = "<group>"; };
-		25245DA81552AF6300EE8F69 /* CAFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAFirstViewController.m; sourceTree = "<group>"; };
 		25245DAA1552AF6300EE8F69 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		25245DAC1552AF6300EE8F69 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		25245DAE1552AF6300EE8F69 /* CASecondViewController.h */ = {isa = PBXFileReference; path = CASecondViewController.h; sourceTree = "<group>"; };
-		25245DAF1552AF6300EE8F69 /* CASecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CASecondViewController.m; sourceTree = "<group>"; };
 		25245DB11552AF6300EE8F69 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		25245DB31552AF6300EE8F69 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		25245DBE1552AFE100EE8F69 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25245DC01552AFE600EE8F69 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		25245DC21552B03800EE8F69 /* CAInsertRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAInsertRouteViewController.h; sourceTree = "<group>"; };
+		25245DC31552B03800EE8F69 /* CAInsertRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInsertRouteViewController.m; sourceTree = "<group>"; };
+		25245DC51552B05600EE8F69 /* CAShowStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShowStationsViewController.h; sourceTree = "<group>"; };
+		25245DC61552B05600EE8F69 /* CAShowStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShowStationsViewController.m; sourceTree = "<group>"; };
+		25245DC81552B25800EE8F69 /* CAShowRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShowRouteViewController.h; sourceTree = "<group>"; };
+		25245DC91552B25800EE8F69 /* CAShowRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShowRouteViewController.m; sourceTree = "<group>"; };
+		25245DCB1552B56900EE8F69 /* CATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATabBarController.h; sourceTree = "<group>"; };
+		25245DCC1552B56900EE8F69 /* CATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATabBarController.m; sourceTree = "<group>"; };
+		25245DCE1552BA0900EE8F69 /* CAStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStation.h; sourceTree = "<group>"; };
+		25245DCF1552BA0900EE8F69 /* CAStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAStation.m; sourceTree = "<group>"; };
+		25245DD11552BA2200EE8F69 /* CAStationsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStationsList.h; sourceTree = "<group>"; };
+		25245DD21552BA2200EE8F69 /* CAStationsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAStationsList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25245DC11552AFE600EE8F69 /* MapKit.framework in Frameworks */,
+				25245DBF1552AFE100EE8F69 /* CoreLocation.framework in Frameworks */,
 				25245D901552AF6300EE8F69 /* UIKit.framework in Frameworks */,
 				25245D921552AF6300EE8F69 /* Foundation.framework in Frameworks */,
 				25245D941552AF6300EE8F69 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +98,8 @@
 		25245D8E1552AF6300EE8F69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25245DC01552AFE600EE8F69 /* MapKit.framework */,
+				25245DBE1552AFE100EE8F69 /* CoreLocation.framework */,
 				25245D8F1552AF6300EE8F69 /* UIKit.framework */,
 				25245D911552AF6300EE8F69 /* Foundation.framework */,
 				25245D931552AF6300EE8F69 /* CoreGraphics.framework */,
@@ -90,18 +110,14 @@
 		25245D951552AF6300EE8F69 /* CA */ = {
 			isa = PBXGroup;
 			children = (
+				25245DBD1552AFC500EE8F69 /* Images */,
+				25245DBC1552AFBE00EE8F69 /* Models */,
+				25245DBB1552AFB600EE8F69 /* Views */,
+				25245DBA1552AFA300EE8F69 /* Controllers */,
 				25245D9E1552AF6300EE8F69 /* CAAppDelegate.h */,
 				25245D9F1552AF6300EE8F69 /* CAAppDelegate.m */,
 				25245DA11552AF6300EE8F69 /* MainStoryboard_iPhone.storyboard */,
 				25245DA41552AF6300EE8F69 /* MainStoryboard_iPad.storyboard */,
-				25245DA71552AF6300EE8F69 /* CAFirstViewController.h */,
-				25245DA81552AF6300EE8F69 /* CAFirstViewController.m */,
-				25245DAA1552AF6300EE8F69 /* first.png */,
-				25245DAC1552AF6300EE8F69 /* first@2x.png */,
-				25245DAE1552AF6300EE8F69 /* CASecondViewController.h */,
-				25245DAF1552AF6300EE8F69 /* CASecondViewController.m */,
-				25245DB11552AF6300EE8F69 /* second.png */,
-				25245DB31552AF6300EE8F69 /* second@2x.png */,
 				25245D961552AF6300EE8F69 /* Supporting Files */,
 			);
 			path = CA;
@@ -116,6 +132,50 @@
 				25245D9D1552AF6300EE8F69 /* CA-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25245DBA1552AFA300EE8F69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25245DC21552B03800EE8F69 /* CAInsertRouteViewController.h */,
+				25245DC31552B03800EE8F69 /* CAInsertRouteViewController.m */,
+				25245DC81552B25800EE8F69 /* CAShowRouteViewController.h */,
+				25245DC91552B25800EE8F69 /* CAShowRouteViewController.m */,
+				25245DC51552B05600EE8F69 /* CAShowStationsViewController.h */,
+				25245DC61552B05600EE8F69 /* CAShowStationsViewController.m */,
+				25245DCB1552B56900EE8F69 /* CATabBarController.h */,
+				25245DCC1552B56900EE8F69 /* CATabBarController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		25245DBB1552AFB600EE8F69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		25245DBC1552AFBE00EE8F69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25245DCE1552BA0900EE8F69 /* CAStation.h */,
+				25245DCF1552BA0900EE8F69 /* CAStation.m */,
+				25245DD11552BA2200EE8F69 /* CAStationsList.h */,
+				25245DD21552BA2200EE8F69 /* CAStationsList.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		25245DBD1552AFC500EE8F69 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				25245DAA1552AF6300EE8F69 /* first.png */,
+				25245DAC1552AF6300EE8F69 /* first@2x.png */,
+				25245DB11552AF6300EE8F69 /* second.png */,
+				25245DB31552AF6300EE8F69 /* second@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +249,12 @@
 			files = (
 				25245D9C1552AF6300EE8F69 /* main.m in Sources */,
 				25245DA01552AF6300EE8F69 /* CAAppDelegate.m in Sources */,
-				25245DA91552AF6300EE8F69 /* CAFirstViewController.m in Sources */,
-				25245DB01552AF6300EE8F69 /* CASecondViewController.m in Sources */,
+				25245DC41552B03800EE8F69 /* CAInsertRouteViewController.m in Sources */,
+				25245DC71552B05600EE8F69 /* CAShowStationsViewController.m in Sources */,
+				25245DCA1552B25800EE8F69 /* CAShowRouteViewController.m in Sources */,
+				25245DCD1552B56900EE8F69 /* CATabBarController.m in Sources */,
+				25245DD01552BA0900EE8F69 /* CAStation.m in Sources */,
+				25245DD31552BA2200EE8F69 /* CAStationsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

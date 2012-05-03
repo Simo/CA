@@ -1,13 +1,13 @@
 //
-//  CASecondViewController.h
+//  CAStation.h
 //  CA
 //
 //  Created by Simone Bierti on 03/05/12.
 //  Copyright (c) 2012 none. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface CASecondViewController : UIViewController
+@interface CAStation : NSObject
 
 @end
